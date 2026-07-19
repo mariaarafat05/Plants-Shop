@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plant shop</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuyu&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- Unicons -->
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+
+</head>
+
+<!-- ============== BUTTON =================== -->
+
+<button id="topBtn">
+    ↑
+</button>
+
+<body>
+
+
+    <!-- ============== Header =================== -->
+
+    <header id="Navigation-Bar" >
+
+        <div class="nav">
+
+            <div class="logo">
+                <img src="images/logo.png"  alt="img" />
+
+                 <h1>Greenly<span>Shop</span></h1>
+            </div>
+
+
+        <div class="Categories">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+
+                <li><a href="#Shop">Shop</a></li>
+
+                <li><a href="#Categories">Categories</a></li>
+
+                <li><a href="#About">About</a></li>
+
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="icons">
+
+            <div class="account">
+            <a href="account.html">
+            <i class="uil uil-user"></i>
+            </a>
+        </div>
+
+        <div class="cart">
+            <a href="cart.html">
+            <i class="uil uil-shopping-cart"></i>
+            </a>
+        </div>
+
+        <div class="search">
+            
+            <input type="text" id="search">
+            <i class="uil uil-search" id="searchIcon"></i>
+
+        </div>
+
+        </div>
+        </div>
+    </header>
+
+
+<!-- ================= HOME SECTİON ================= -->
+
+<section id="Home" class="hidden">
+    <div class="home">
+        <img src="images/home.png" alt="img"/>
+        <div class="home-text">
+        <h3>BRING NATURE TO YOUR HOME</h3>
+        <h1>Beautiful Plants For <span>Your Space</span></h1>
+        <p>Explore a wide variety of fresh and healthy plants to make  your home more beautiful and your life greener.</p>
+        <button><a href="#" class="btn">Shop Now →</a></button>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ================= Shop ================= -->
+
+
+<section id="Shop" class="hidden">
+    <div class="shop">
+        <h1>Shop By Category</h1>
+        <p>Bring nature closer with our carefully selected plants</p>
+
+         <div class="shop-container">
+
+        <div class="shop-category">
+            <img src="images/shop.jpg" alt="img"/>
+            <h4>Indoor Plants</h4>
+            <a href="#">Shop Now  → </a>
+        </div>
+
+        <div class="shop-category">
+            <img src="images/shop1.jpg" alt="img"/>
+            <h4>Outdoor Plants</h4>
+            <a href="#">Shop Now  → </a>
+        </div>
+
+        <div class="shop-category">
+            <img src="images/shop2.jpg" alt="img"/>
+            <h4>Succulents Plants</h4>
+            <a href="#">Shop Now  → </a>
+        </div>
+
+        <div class="shop-category">
+            <img src="images/shop3.jpg" alt="img"/>
+            <h4>Flowering Plants</h4>
+            <a href="#">Shop Now  → </a>
+        </div>
+
+        <div class="shop-category">
+            <img src="images/shop4.jpg" alt="img"/>
+            <h4>Plants Care</h4>
+            <a href="#">Shop Now  → </a>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= CATEGORYS ================= -->
+
+
+<section id="Categories" class="hidden">
+    <div class="category">
+        <h1>Popular Plants</h1>
+
+        <div class="category-base">
+
+            <div class="category-box"  data-name="Snake Plants">
+                <img src="images/Snake.jpg" alt="img"/>
+                <h3>Snake Plants</h3>
+                <h5>25.99$</h5>
+                <button
+                 class="add-cart"
+                 data-name="Snake Plant"
+                 data-price="25"
+                 data-image="images/Snake.jpg">
+                 Add to Cart
+                </button>
+            </div>
+
+            <div class="category-box"  data-name="Spider Plants">
+                <img src="images/Spider Plant.jpg" alt="img"/>
+                <h3>Spider Plants</h3>
+                <h5>27.99$</h5>
+                <button
+                 class="add-cart"
+                 data-name="Spider Plant"
+                 data-price="27"
+                 data-image="images/Spider Plant.jpg">
+                 Add to Cart
+                </button>
+            </div>
+
+            <div class="category-box"  data-name="Peace Lily Plants">
+                <img src="images/Peace Lily.jpg" alt="img"/>
+                <h3>Peace Lily Plants</h3>
+                <h5>26.99$</h5>
+                <button
+                 class="add-cart"
+                 data-name="Peace Lily Plants"
+                 data-price="26"
+                 data-image="images/peace lily.jpg">
+                 Add to Cart
+                </button>
+            </div>
+
+            <div class="category-box"  data-name="Pothos Plants">
+                <img src="images/pothos.jpg" alt="img"/>
+                <h3>Pothos Plants</h3>
+                <h5>28.99$</h5>
+                <button
+                 class="add-cart"
+                 data-name="Pothos Plants"
+                 data-price="28"
+                 data-image="images/Pothos.jpg">
+                 Add to Cart
+                </button>
+            </div>
+
+            <div class="category-box" data-name="Aloe Vera Plants">
+                <img src="images/aloe vera.jpg" alt="img"/>
+                <h3>Aloe Vera Plants</h3>
+                <h5>29.99$</h5>
+                <button
+                 class="add-cart"
+                 data-name="Aloe Vera Plants"
+                 data-price="29"
+                 data-image="images/aloe vera.jpg">
+                 Add to Cart
+                </button>
+            </div>
+
+            <div class="category-box" data-name="ZZ Plants">
+                <img src="images/zz.jpg" alt="img"/>
+                <h3>Zz Plants</h3>
+                <h5>30.99$</h5>
+                <button
+                 class="add-cart"
+                 data-name="Zz Plants"
+                 data-price="30"
+                 data-image="images/zz.jpg">
+                 Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= ABOUT US ================= -->
+
+
+<section id="About" class="hidden">
+    <div class="about">
+
+        <img src="images/about.jpg" width="40%" alt="img"/>
+
+        <div class="about-text">
+
+        <h5>ABOUT GREENLY</h5>
+
+        <h1>We Bring Nature To Your Home</h1>
+
+        <p>At Greenly, we're passionate about plants.
+            <br>Our mission is to help you create beautiful,
+            <br>healthy spaces with the best plants and care.
+        </p>
+
+        <button><a href="#">Learn More  → </a></button>
+
+        </div>
+
+        <div class="about-boxes">
+
+        <div class="about-box">
+        <i class="uil uil-file-shield-alt"></i>
+        <h6>Premium Quality</h6>
+        <p>The best quality plants for you.</p>
+    </div>
+
+    <div class="about-box">
+        <i class="uil uil-pagelines"></i>
+        <h6>Healthy Plants</h6>
+        <p>Carefully selected for your space.</p>
+    </div>
+
+    <div class="about-box">
+        <i class="uil uil-headphones-alt"></i>
+        <h6>24/7 Support</h6>
+        <p>We're here to help you anytime.</p>
+    </div>
+
+    <div class="about-box">
+        <i class="uil uil-truck"></i>
+        <h6>Fast Delivery</h6>
+        <p>Quick and reliable delivery to your door.</p>
+    </div>
+
+    </div>
+    </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+
+<section id="Contact" class="hidden">
+    <div class="contact">
+
+        <div class="contact-text">
+
+            <h1>Contact Us</h1>
+
+            <div class="contact-info">
+                <i class="uil uil-map-marker"></i>
+                <span>Turkey</span>
+            </div>
+
+            <div class="contact-info">
+                <i class="uil uil-phone"></i>
+                <span>+90 555 555 555</span>
+            </div>
+
+            <div class="contact-info">
+                <i class="uil uil-envelope"></i>
+                <span>hello@greenly.com</span>
+            </div>
+
+            <div class="social-icons">
+                <i class="uil uil-facebook-f"></i>
+                <i class="uil uil-instagram"></i>
+                <i class="uil uil-youtube"></i>
+            </div>
+
+        </div>
+
+        <form class="contact-form">
+
+            <div class="input-row">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+            </div>
+
+            <input type="text" placeholder="Subject">
+
+            <textarea placeholder="Message"></textarea>
+
+            <button><a href="#">Send Message →</a></button>
+
+        </form>
+
+    </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+
+
+<footer class="hidden">
+    <div class="footer">
+
+        <div class="footer-text">
+            <h1>GREENLY SHOP</h1>
+            <p>Bring nature to your home and make every day greener.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Categories</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Customer Service</h3>
+            <a href="#">My Account</a>
+            <a href="#">Orders</a>
+            <a href="#">Shipping & Delivery</a>
+            <a href="#">Returns</a>
+            <a href="#">FAQs</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Follow Us</h3>
+
+            <a href="#"><i class="uil uil-facebook-f"></i> Facebook</a>
+            <a href="#"><i class="uil uil-instagram"></i> Instagram</a>
+            <a href="#"><i class="uil uil-youtube"></i> Youtube</a>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 Greenly. All Rights Reserved.
+    </p>
+</footer>
+    
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
